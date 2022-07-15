@@ -60,11 +60,15 @@ header img {
   text-align: justify;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 10px;
   padding: 40px;
 }
-
+.resaltado1 {
+  color: rgb(160, 20, 20);
+  font-weight: 1000;
+  font-size: 2rem;
+}
 .img-index {
   width: 800px;
   height: 700px;
@@ -83,13 +87,6 @@ header img {
   background: rgb(0, 0, 0);
   background: linear-gradient(83deg, #212529 58%, rgb(94, 9, 9) 98%);
 }
-
-.resaltado1 {
-  color: rgb(160, 20, 20);
-  font-weight: 1000;
-  font-size: 3rem;
-}
-
 .centrarImg {
   display: flex;
   justify-content: center;
@@ -181,6 +178,10 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ccc;
+}
+.contac{
+  background-color: #fda83b;
 }
 
 .video_container {
