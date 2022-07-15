@@ -2,11 +2,7 @@
 /*estilos generales*/
 body {
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    83deg,
-    #212529 58%,
-    rgb(94, 9, 9) 98%
-  );
+  background: linear-gradient(83deg, #212529 58%, rgb(94, 9, 9) 98%);
 }
 h1 {
   text-align: center;
@@ -14,33 +10,34 @@ h1 {
   color: rgb(255, 0, 0);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 30px;
-  font-size: 4rem;
+
 }
+
 .segundoTitulo {
   color: rgb(255, 0, 0);
   letter-spacing: 3px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .navbar {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    83deg,
-    #212529 58%,
-    rgb(94, 9, 9) 98%
-  );
+  background: #000000;
+  position: sticky;
+  top: 0px;
 }
-.navbar-collapse{
+.navbar-brand img {
+  width: 200px;
+}
+.navbar-collapse {
   flex-grow: initial;
 }
-.nav-link {
+.collapse .navbar-nav .nav-link {
   font-size: 1.7rem;
-  color: #ff0000;
+  color: #fda83b;
 }
 .navbar-toggler {
   background-color: #913836;
   border: 4px solid #131618;
 }
-
 
 header img {
   width: 200px;
@@ -49,39 +46,35 @@ header img {
 /*index*/
 .banner__container {
   display: flex;
+  padding: 20px;
 }
 
 .parrafoUno {
   color: black;
-  background-color: rgb(165, 169, 169);
-  border: solid 5px red;
-  text-align: center;
-  font-weight: 700;
+  background-color: #fda83b;
+  text-align: justify;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  font-size: 1.8rem;
+  font-size: 3rem;
+  margin: 10px;
+  padding: 40px;
+}
+.img-index {
+  width: 800px;
+  height: 700px;
 }
 /*historia*/
 .accordion-button {
   padding: 1.5rem 1.25rem;
   font-size: 1.2rem;
   color: #e20d12;
-  background: linear-gradient(
-    83deg,
-    #212529 58%,
-    rgb(94, 9, 9) 98%
-  );
+  background: linear-gradient(83deg, #212529 58%, rgb(94, 9, 9) 98%);
 }
 .accordion-button:not(.collapsed) {
   color: #e20d12;
-  ;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    83deg,
-    #212529 58%,
-    rgb(94, 9, 9) 98%
-  );
- }
+  background: linear-gradient(83deg, #212529 58%, rgb(94, 9, 9) 98%);
+}
 .resaltado1 {
   color: rgb(160, 20, 20);
   font-weight: 1000;
@@ -101,16 +94,36 @@ header img {
   border: 10px solid #ccc;
   width: 600px;
   height: 500px;
-  box-shadow: 10px 10px 20px #e04747; 
+  box-shadow: 10px 10px 20px #e04747;
 }
 /* footer */
+footer {
+  background: #2a2727;
+  padding: 20px;
+}
 .bi {
-    line-height: 2;
-    vertical-align: 0.875em;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1.2rem;
-}  
+  line-height: 2;
+  vertical-align: 0.875em;
+  -webkit-font-smoothing: antialiased;
+  font-size: 25px;
+  color: #fda83b;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
 /* ............................................... */
+.grids__item2 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  }
+
+
+
 .grids__item {
   position: relative;
   background: rgb(8, 8, 8);
@@ -156,16 +169,16 @@ iframe {
 
 /* tablets */
 @media only screen and (max-width: 768px) {
-  h1{
+  h1 {
     font-size: 1.8rem;
   }
   .segundoTitulo {
     font-size: 1rem;
   }
-  .parrafoUno{
+  .parrafoUno {
     font-size: 1rem;
   }
-  .resaltado1{
+  .resaltado1 {
     font-size: 1rem;
   }
   /*recitales*/
@@ -173,7 +186,7 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  .bajoNombre{
+  .bajoNombre {
     font-size: 1rem;
   }
   iframe {
@@ -184,23 +197,23 @@ iframe {
   .img-index {
     width: 100%;
   }
-  .img-banner{
+  .img-banner {
     width: 100%;
   }
   .banner__container {
     flex-direction: column;
   }
   /* todas las img */
-  .laimagen1{
+  .laimagen1 {
     width: 100%;
   }
   /*discografia*/
   .grids {
-    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
   }
   /*recitales*/
-  .bajoNombre{
+  .bajoNombre {
     font-size: 1rem;
   }
   .video_container {
@@ -215,30 +228,30 @@ iframe {
 /*mobile*/
 @media only screen and (max-width: 320px) {
   /*estilos generales*/
-  h1{
+  h1 {
     font-size: 1.3rem;
   }
   .segundoTitulo {
     font-size: 0.8rem;
   }
-  .parrafoUno{
+  .parrafoUno {
     font-size: 0.8rem;
   }
-  .resaltado1{
+  .resaltado1 {
     font-size: 0.8rem;
   }
   /*index*/
   .img-index {
     width: 100%;
   }
-  .img-banner{
+  .img-banner {
     width: 100%;
   }
   .banner__container {
     flex-direction: column;
   }
   /* todas las img */
-  .laimagen1{
+  .laimagen1 {
     width: 100%;
   }
   /*discografia*/
@@ -248,7 +261,7 @@ iframe {
   }
 
   /*recitales*/
-  .bajoNombre{
+  .bajoNombre {
     font-size: 0.8rem;
   }
   .video_container {
@@ -260,3 +273,4 @@ iframe {
     height: 150px;
   }
 }
+
