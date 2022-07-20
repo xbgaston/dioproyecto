@@ -1,0 +1,77 @@
+h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 30px; }
+
+h2 {
+  color: red;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem; }
+
+body {
+  background: linear-gradient(83deg, #212529 58%, #5e0909 98%); }
+
+.parrafoUno {
+  color: black;
+  background-color: #fda83b;
+  text-align: justify;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 40px; }
+
+/* NAV DE BOOSTRAPS */
+.navbar {
+  background: #000000;
+  position: sticky;
+  top: 0px; }
+
+.navbar-brand img {
+  width: 170px; }
+
+.navbar-collapse {
+  flex-grow: initial; }
+
+.collapse .navbar-nav .nav-link {
+  font-size: 1.7rem;
+  color: #fda83b; }
+
+.navbar-toggler {
+  background-color: #913836;
+  border: 4px solid #131618; }
+
+/* FOOTER */
+footer {
+  background: #2a2727;
+  padding: 20px; }
+  footer .bi {
+    line-height: 2;
+    vertical-align: 0.875em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 25px;
+    color: #fda83b; }
+  footer ul {
+    display: flex;
+    justify-content: space-around; }
+
+.banner__container {
+  display: flex;
+  padding: 20px; }
+
+.resaltado1 {
+  color: #a01414;
+  font-weight: 1000;
+  font-size: 2rem; }
+
+.img-index {
+  width: 800px;
+  height: 700px; }
+
+.centrarImg {
+  display: flex;
+  justify-content: center; }
