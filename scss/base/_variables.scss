@@ -1,1 +1,14 @@
-$color-principalfondo: linear-gradient(83deg, #212529 58%, rgb(94, 9, 9) 98%);
+$colores:(
+    "color-principalfondo": linear-gradient(83deg, #212529 58%, rgb(94, 9, 9) 98%),
+    "color-parah1": rgb(255, 0, 0),
+    "color-parah2": rgb(255, 0, 0)
+);
+
+@mixin h2 ($bgColor, $textColor) {
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: $textColor;
+    color: $bgColor;
+}

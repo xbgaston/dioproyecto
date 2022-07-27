@@ -1,0 +1,41 @@
+
+.imgGaleria {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+.grids__item {
+    position: relative;
+    background: rgb(8, 8, 8);
+    background: linear-gradient(287deg,
+        rgb(36, 35, 35) 41%,
+        rgba(131, 0, 0, 1) 69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bajoNombre {
+    position: absolute;
+    bottom: 0;
+    color: antiquewhite;
+    background: linear-gradient(rgb(115, 40, 40), black);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.grids {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.imgGaleria {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+.imgGaleria:hover {
+    transition: all 1s;
+    transform: scale(1.2);
+}
+  

@@ -2,12 +2,12 @@
 h1 {
     text-align: center;
     letter-spacing: 4px;
-    color: rgb(255, 0, 0);
+    color: map-get($colores,"color-parah1");
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin-bottom: 30px;
 }
 h2{
-    color: rgb(255, 0, 0);
+    color: map-get($colores,"color-parah2");
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-align: center;
@@ -15,7 +15,7 @@ h2{
 }
 
 body {
-    background: $color-principalfondo;
+    background: map-get($colores,"color-principalfondo");
   }
 .parrafoUno {
     color: black;
@@ -65,5 +65,132 @@ body {
     ul {
     display: flex;
     justify-content: space-around;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .segundoTitulo {
+    font-size: 1rem;
+  }
+
+  .parrafoUno {
+    font-size: 1rem;
+  }
+
+  .resaltado1 {
+    font-size: 1rem;
+  }
+
+  /*recitales*/
+  .video_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .bajoNombre {
+    font-size: 1rem;
+  }
+
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  /*index*/
+  .img-index {
+    width: 100%;
+  }
+
+  .img-banner {
+    width: 100%;
+  }
+
+  .banner__container {
+    flex-direction: column;
+  }
+
+  /* todas las img afecta en historia */
+  .laimagen1 {
+    width: 100%;
+  }
+
+  /*discografia*/
+  .grids {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  /*recitales*/
+  .bajoNombre {
+    font-size: 1rem;
+  }
+
+  .video_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .segundoTitulo {
+    font-size: 0.8rem;
+  }
+
+  .parrafoUno {
+    font-size: 0.8rem;
+  }
+
+  .resaltado1 {
+    font-size: 0.8rem;
+  }
+
+  .img-index {
+    width: 100%;
+  }
+
+  .img-banner {
+    width: 100%;
+  }
+
+  .banner__container {
+    flex-direction: column;
+  }
+
+  .laimagen1 {
+    width: 100%;
+  }
+  .grids {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+  }
+  .bajoNombre {
+    font-size: 0.8rem;
+  }
+
+  .video_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  iframe {
+    width: 200px;
+    height: 150px;
   }
 }

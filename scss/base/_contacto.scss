@@ -1,0 +1,22 @@
+
+
+.grids__Item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+  }
+  .contac{
+    background-color: #fda83b;
+    font-size: 1.2rem;
+  }
+  .sombra {
+    margin: 25px auto;
+    border: 10px solid #ccc;
+    width: 600px;
+    height: 500px;
+    box-shadow: 10px 10px 20px #e04747;
+  }
+  .subtiContac{
+    @include h2(rgb(0, 0, 0),red)
+  }

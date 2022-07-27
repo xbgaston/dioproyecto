@@ -1,0 +1,26 @@
+.grids {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+.grids__item {
+    position: relative;
+    background: rgb(8, 8, 8);
+    background: linear-gradient(287deg,
+        rgb(36, 35, 35) 41%,
+        rgba(131, 0, 0, 1) 69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .video_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  iframe {
+    width: 450px;
+    height: 300px;
+  }
