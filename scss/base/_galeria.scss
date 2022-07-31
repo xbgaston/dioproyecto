@@ -23,12 +23,27 @@
     margin: 0;
     padding: 10px;
     font-size: 1.2rem;
+    @include mediaQuery('tablet'){
+        font-size: 1rem;
+      }
+      @include mediaQuery('mobile'){
+        font-size: 0.8rem;
+      }
+
 }
 .grids {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    @include mediaQuery('tablet'){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+      }
+    @include mediaQuery('mobile'){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+      }
 }
 .imgGaleria {
     width: 250px;

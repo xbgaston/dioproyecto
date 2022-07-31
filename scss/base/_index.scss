@@ -1,12 +1,24 @@
 .banner__container {
     display: flex;
     padding: 20px;
+    @include mediaQuery('tablet'){
+        flex-direction: column;
+      }
+      @include mediaQuery('mobile'){
+        flex-direction: column;
+      }
     
 }
 .resaltado1 {
     color: rgb(160, 20, 20); 
     font-weight: 1000;
     font-size: 2rem;
+    @include mediaQuery('tablet'){
+        font-size: 1rem;
+      }
+      @include mediaQuery('mobile'){
+        font-size: 0.8rem;
+      }
 }
 .img-index {
     width: 800px;
@@ -15,4 +27,19 @@
 .centrarImg {
     display: flex;
     justify-content: center;
-  }
+    @include mediaQuery('tablet'){
+        width: 100%;
+      }
+      @include mediaQuery('mobile'){
+        width: 100%;
+      }
+}
+.img-banner{
+    @include mediaQuery('tablet'){
+        width: 100%;
+      }
+      @include mediaQuery('mobile'){
+        width: 100%;
+      }
+}
+

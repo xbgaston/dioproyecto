@@ -12,3 +12,18 @@ $colores:(
     background-color: $textColor;
     color: $bgColor;
 }
+
+
+
+@mixin mediaQuery ($pantalla){
+    @if $pantalla == 'tablet'{
+        @media screen and (max-width: 720px){
+            @content
+        }
+    };
+    @if $pantalla == 'mobile'{
+        @media screen and (max-width: 320px){
+            @content
+        }
+    };
+}
