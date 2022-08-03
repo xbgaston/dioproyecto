@@ -5,12 +5,6 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 30px;
   padding: 40px; }
-  @media screen and (max-width: 720px) {
-    h1 {
-      font-size: 1.8rem; } }
-  @media screen and (max-width: 320px) {
-    h1 {
-      font-size: 1.3rem; } }
 
 h2 {
   color: #fda83b;
@@ -19,12 +13,6 @@ h2 {
   text-align: center;
   font-size: 2rem;
   padding: 20px; }
-  @media screen and (max-width: 720px) {
-    h2 {
-      font-size: 1rem; } }
-  @media screen and (max-width: 320px) {
-    h2 {
-      font-size: 0.8rem; } }
 
 body {
   background: black; }
@@ -38,12 +26,6 @@ body {
   font-size: 2rem;
   margin: 10px;
   padding: 40px; }
-  @media screen and (max-width: 720px) {
-    .parrafoUno {
-      font-size: 0.8rem; } }
-  @media screen and (max-width: 320px) {
-    .parrafoUno {
-      font-size: 0.8rem; } }
 
 /* NAV DE BOOSTRAPS */
 .navbar {
@@ -81,26 +63,92 @@ footer {
     display: flex;
     justify-content: space-around; }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; }
+  h2 {
+    font-size: 1rem; }
+  .parrafoUno {
+    font-size: 0.8rem; }
+  /* index */
+  .tituloprincipal {
+    font-size: 2.5rem; }
+  .resaltado1 {
+    font-size: 1rem; }
+  .centrarImg {
+    display: flex;
+    justify-content: center;
+    width: 500px; }
+  .img-banner {
+    width: 100%; }
+  /* contacto */
+  .textContac {
+    font-size: 1rem; }
+  .contac {
+    font-size: 1rem; }
+  /* historia */
+  .laimagen1 {
+    width: 100%; }
+  /* recitales */
+  .video_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  iframe {
+    width: 300px;
+    height: 200px; }
+  /* galeria */
+  .bajoNombre {
+    font-size: 1rem; }
+  .grids {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr); } }
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.3rem; }
+  h2 {
+    font-size: 0.8rem; }
+  .parrafoUno {
+    font-size: 0.8rem; }
+  /* index */
+  .tituloprincipal {
+    font-size: 1.9rem; }
+  .resaltado1 {
+    font-size: 0.8rem; }
+  .centrarImg {
+    display: flex;
+    justify-content: center;
+    width: 300px; }
+  .img-banner {
+    width: 100%; }
+  /* contacto */
+  .textContac {
+    font-size: 0.8rem; }
+  .contac {
+    font-size: 0.8rem; }
+  .laimagen1 {
+    width: 100%; }
+  .video_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+  iframe {
+    width: 200px;
+    height: 150px; }
+  /* galeria */
+  .bajoNombre {
+    font-size: 0.8rem; }
+  .grids {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr); } }
+
 .textContac {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ccc; }
-  @media screen and (max-width: 720px) {
-    .textContac {
-      font-size: 1rem; } }
-  @media screen and (max-width: 320px) {
-    .textContac {
-      font-size: 0.8rem; } }
 
 .contac {
   font-size: 1.2rem; }
-  @media screen and (max-width: 720px) {
-    .contac {
-      font-size: 1rem; } }
-  @media screen and (max-width: 320px) {
-    .contac {
-      font-size: 0.8rem; } }
 
 .sombra {
   margin: 25px auto;
@@ -130,12 +178,6 @@ footer {
   margin: 0;
   padding: 10px;
   font-size: 1.2rem; }
-  @media screen and (max-width: 720px) {
-    .bajoNombre {
-      font-size: 1rem; } }
-  @media screen and (max-width: 320px) {
-    .bajoNombre {
-      font-size: 0.8rem; } }
 
 .grids {
   display: grid;
@@ -143,14 +185,6 @@ footer {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   padding: 20px; }
-  @media screen and (max-width: 720px) {
-    .grids {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, 1fr); } }
-  @media screen and (max-width: 320px) {
-    .grids {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(10, 1fr); } }
 
 .imgGaleria {
   width: 250px;
@@ -178,38 +212,17 @@ footer {
 .laimagen1 {
   width: 250px;
   margin-bottom: 10px; }
-  @media screen and (max-width: 720px) {
-    .laimagen1 {
-      width: 100%; } }
-  @media screen and (max-width: 320px) {
-    .laimagen1 {
-      width: 100%; } }
 
 .tituloprincipal {
   font-family: 'Courier Prime', monospace;
   font-family: 'Fira Mono', monospace;
   font-family: 'Nanum Gothic Coding', monospace;
   font-size: 4rem; }
-  @media screen and (max-width: 720px) {
-    .tituloprincipal {
-      font-size: 2.5rem; } }
-  @media screen and (max-width: 320px) {
-    .tituloprincipal {
-      font-size: 1.9rem; } }
 
 .banner__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
   padding: 50px; }
-  @media screen and (max-width: 720px) {
-    .banner__container {
-      grid-template-columns: repeat(2, 1fr);
-      flex-direction: column; } }
-  @media screen and (max-width: 320px) {
-    .banner__container {
-      grid-template-columns: 1fr;
-      flex-direction: column; } }
 
 .logo1 {
   height: 50px; }
@@ -224,12 +237,6 @@ footer {
   color: #a01414;
   font-weight: 1000;
   font-size: 2rem; }
-  @media screen and (max-width: 720px) {
-    .resaltado1 {
-      font-size: 1rem; } }
-  @media screen and (max-width: 320px) {
-    .resaltado1 {
-      font-size: 0.8rem; } }
 
 .imgindex {
   display: flex;
@@ -237,40 +244,10 @@ footer {
 
 .centrarImg {
   width: 80%; }
-  @media screen and (max-width: 720px) {
-    .centrarImg {
-      display: flex;
-      justify-content: center;
-      width: 500px; } }
-  @media screen and (max-width: 320px) {
-    .centrarImg {
-      display: flex;
-      justify-content: center;
-      width: 300px; } }
 
 .img-banner {
   display: flex;
   width: 70%; }
-  @media screen and (max-width: 720px) {
-    .img-banner {
-      width: 100%; } }
-  @media screen and (max-width: 320px) {
-    .img-banner {
-      width: 100%; } }
-
-.grids {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px; }
-  @media screen and (max-width: 720px) {
-    .grids {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, 1fr); } }
-  @media screen and (max-width: 320px) {
-    .grids {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(10, 1fr); } }
 
 .grids__item {
   position: relative;
@@ -284,23 +261,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); }
-  @media screen and (max-width: 720px) {
-    .video_container {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr); } }
-  @media screen and (max-width: 320px) {
-    .video_container {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(6, 1fr); } }
 
 iframe {
   width: 450px;
   height: 300px; }
-  @media screen and (max-width: 720px) {
-    iframe {
-      width: 300px;
-      height: 200px; } }
-  @media screen and (max-width: 320px) {
-    iframe {
-      width: 200px;
-      height: 150px; } }
