@@ -1,14 +1,24 @@
 
-
-.grids__Item3 {
+.textContac {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ccc;
+    @include mediaQuery('tablet'){
+      font-size: 1rem;
+    }
+    @include mediaQuery('mobile'){
+      font-size: 0.8rem;
+    }
   }
   .contac{
-    background-color: #fda83b;
     font-size: 1.2rem;
+    @include mediaQuery('tablet'){
+      font-size: 1rem;
+    }
+    @include mediaQuery('mobile'){
+      font-size: 0.8rem;
+    }
   }
   .sombra {
     margin: 25px auto;
@@ -16,7 +26,4 @@
     width: 600px;
     height: 500px;
     box-shadow: 10px 10px 20px #e04747;
-  }
-  .subtiContac{
-    @include h2(rgb(0, 0, 0),red)
   }

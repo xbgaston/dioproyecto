@@ -17,7 +17,7 @@
 .bajoNombre {
     position: absolute;
     bottom: 0;
-    color: antiquewhite;
+    color: #fda83b;
     background: linear-gradient(rgb(115, 40, 40), black);
     width: 100%;
     margin: 0;
@@ -29,13 +29,13 @@
       @include mediaQuery('mobile'){
         font-size: 0.8rem;
       }
-
 }
 .grids {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    padding: 20px;
     @include mediaQuery('tablet'){
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);

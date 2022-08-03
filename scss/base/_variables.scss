@@ -1,9 +1,8 @@
 $colores:(
-    "color-principalfondo": linear-gradient(83deg, #212529 58%, rgb(94, 9, 9) 98%),
+    "color-principalfondo":rgb(0,0,0),
     "color-parah1": rgb(255, 0, 0),
-    "color-parah2": rgb(255, 0, 0)
+    "color-parah2": #fda83b
 );
-
 @mixin h2 ($bgColor, $textColor) {
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -12,9 +11,6 @@ $colores:(
     background-color: $textColor;
     color: $bgColor;
 }
-
-
-
 @mixin mediaQuery ($pantalla){
     @if $pantalla == 'tablet'{
         @media screen and (max-width: 720px){

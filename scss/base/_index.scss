@@ -1,13 +1,38 @@
+.tituloprincipal{
+  font-family: 'Courier Prime', monospace;
+  font-family: 'Fira Mono', monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 4rem;
+  @include mediaQuery('tablet'){
+    font-size: 2.5rem;
+  }
+  @include mediaQuery('mobile'){
+    font-size: 1.9rem;
+  }
+}
+
 .banner__container {
-    display: flex;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    padding: 50px;
     @include mediaQuery('tablet'){
+        grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
       }
       @include mediaQuery('mobile'){
+        grid-template-columns: 1fr;
         flex-direction: column;
       }
-    
+}
+.logo1{
+  height: 50px;   
+}
+.grids_item2{
+  background-color: #fda83b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .resaltado1 {
     color: rgb(160, 20, 20); 
@@ -20,21 +45,26 @@
         font-size: 0.8rem;
       }
 }
-.img-index {
-    width: 800px;
-    height: 700px;
-} 
+.imgindex{
+  display: flex;
+  justify-content: center; 
+}
 .centrarImg {
-    display: flex;
-    justify-content: center;
+    width: 80%;
     @include mediaQuery('tablet'){
-        width: 100%;
+      display: flex;
+      justify-content: center;
+      width: 500px;
       }
       @include mediaQuery('mobile'){
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        width: 300px;
       }
 }
 .img-banner{
+  display: flex;
+  width: 70%;
     @include mediaQuery('tablet'){
         width: 100%;
       }
