@@ -63,84 +63,6 @@ footer {
     display: flex;
     justify-content: space-around; }
 
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem; }
-  h2 {
-    font-size: 1rem; }
-  .parrafoUno {
-    font-size: 0.8rem; }
-  /* index */
-  .tituloprincipal {
-    font-size: 2.5rem; }
-  .resaltado1 {
-    font-size: 1rem; }
-  .centrarImg {
-    display: flex;
-    justify-content: center;
-    width: 500px; }
-  .img-banner {
-    width: 100%; }
-  /* contacto */
-  .textContac {
-    font-size: 1rem; }
-  .contac {
-    font-size: 1rem; }
-  /* historia */
-  .laimagen1 {
-    width: 100%; }
-  /* recitales */
-  .video_container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); }
-  iframe {
-    width: 300px;
-    height: 200px; }
-  /* galeria */
-  .bajoNombre {
-    font-size: 1rem; }
-  .grids {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr); } }
-
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 1.3rem; }
-  h2 {
-    font-size: 0.8rem; }
-  .parrafoUno {
-    font-size: 0.8rem; }
-  /* index */
-  .tituloprincipal {
-    font-size: 1.9rem; }
-  .resaltado1 {
-    font-size: 0.8rem; }
-  .centrarImg {
-    display: flex;
-    justify-content: center;
-    width: 300px; }
-  .img-banner {
-    width: 100%; }
-  /* contacto */
-  .textContac {
-    font-size: 0.8rem; }
-  .contac {
-    font-size: 0.8rem; }
-  .laimagen1 {
-    width: 100%; }
-  .video_container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr); }
-  iframe {
-    width: 200px;
-    height: 150px; }
-  /* galeria */
-  .bajoNombre {
-    font-size: 0.8rem; }
-  .grids {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr); } }
-
 .textContac {
   display: flex;
   justify-content: center;
@@ -221,7 +143,7 @@ footer {
 
 .banner__container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding: 50px; }
 
 .logo1 {
@@ -243,11 +165,11 @@ footer {
   justify-content: center; }
 
 .centrarImg {
-  width: 80%; }
+  width: 70%; }
 
 .img-banner {
   display: flex;
-  width: 70%; }
+  width: 100%; }
 
 .grids__item {
   position: relative;
@@ -263,5 +185,83 @@ footer {
   grid-template-rows: repeat(2, 1fr); }
 
 iframe {
-  width: 450px;
-  height: 300px; }
+  width: 430px;
+  height: 290px; }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; }
+  h2 {
+    font-size: 1rem; }
+  .parrafoUno {
+    font-size: 0.8rem; }
+  /* index */
+  .tituloprincipal {
+    font-size: 2.5rem; }
+  .resaltado1 {
+    font-size: 1rem; }
+  .centrarImg {
+    display: flex;
+    justify-content: center;
+    width: 500px; }
+  .img-banner {
+    width: 100%; }
+  /* contacto */
+  .textContac {
+    font-size: 1rem; }
+  .contac {
+    font-size: 1rem; }
+  /* historia */
+  .laimagen1 {
+    width: 100%; }
+  /* recitales */
+  .video_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  iframe {
+    width: 300px;
+    height: 200px; }
+  /* galeria */
+  .bajoNombre {
+    font-size: 1rem; }
+  .grids {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr); } }
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.3rem; }
+  h2 {
+    font-size: 0.8rem; }
+  .parrafoUno {
+    font-size: 0.8rem; }
+  /* index */
+  .tituloprincipal {
+    font-size: 1.9rem; }
+  .resaltado1 {
+    font-size: 0.8rem; }
+  .centrarImg {
+    display: flex;
+    justify-content: center;
+    width: 300px; }
+  .img-banner {
+    width: 100%; }
+  /* contacto */
+  .textContac {
+    font-size: 0.8rem; }
+  .contac {
+    font-size: 0.8rem; }
+  .laimagen1 {
+    width: 100%; }
+  .video_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+  iframe {
+    width: 200px;
+    height: 150px; }
+  /* galeria */
+  .bajoNombre {
+    font-size: 0.8rem; }
+  .grids {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr); } }

@@ -7,7 +7,7 @@
 
 .banner__container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding: 50px;
 }
 
@@ -35,10 +35,10 @@
 }
 
 .centrarImg {
-  width: 80%;
+  width: 70%;
 }
 
 .img-banner {
   display: flex;
-  width: 70%;
+  width: 100%;
 }
