@@ -139,7 +139,7 @@ footer {
   font-family: 'Courier Prime', monospace;
   font-family: 'Fira Mono', monospace;
   font-family: 'Nanum Gothic Coding', monospace;
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 .banner__container {
   display: flex;
@@ -165,7 +165,7 @@ footer {
   justify-content: center; }
 
 .centrarImg {
-  width: 70%; }
+  width: 50%; }
 
 .img-banner {
   display: flex;
